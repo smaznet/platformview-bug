@@ -17,9 +17,10 @@ class TmpVideoView {
     // ignore: undefined_prefixed_name
     ui.platformViewRegistry.registerViewFactory('vid-${id}', (int viewId) {
       final element = VideoElement();
-      element.id = 'video-${id}';
+      element.id = 'video-$id';
       element.style.border = 'none';
       element.autoplay = true;
+      element.muted = true;
       element.src = 'https://www.w3schools.com/html/mov_bbb.mp4';
       return element;
     });
@@ -57,7 +58,7 @@ class MyApp extends StatelessWidget {
                     crossAxisSpacing: 10,
                     childAspectRatio: 1,
                   ),
-                  itemCount: 20,
+                  itemCount: 60,
                   itemBuilder: (ctx, index) {
                     return Container(
                       width: 100,
