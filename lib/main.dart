@@ -21,6 +21,9 @@ class TmpVideoView {
       element.style.border = 'none';
       element.autoplay = true;
       element.muted = true;
+      element.style
+        ..width = "100%"
+        ..height = "100%";
       element.src = 'https://www.w3schools.com/html/mov_bbb.mp4';
       return element;
     });
