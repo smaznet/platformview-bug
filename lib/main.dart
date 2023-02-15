@@ -109,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // in the middle of the parent.
           child: GridView.builder(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 4,
+                crossAxisCount: 6,
                 mainAxisSpacing: 10,
                 crossAxisSpacing: 10,
                 childAspectRatio: 1,
